@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Setup Docker Buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v3
 
       - name: Build
         uses: docker/build-push-action@v3.0.0
@@ -46,7 +46,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Setup Docker Buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v3
 
       - name: Gather Docker metadata
         id: meta
